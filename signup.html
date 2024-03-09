@@ -36,6 +36,8 @@
             cursor: pointer;
             margin-top: 10px;
         }
+        
+       
       
     </style>
 </head>
@@ -63,14 +65,18 @@
 
         </div>
     </nav>
-    <h1>Welcome to ADIP Registration</h1>
+    <h1 class="h1 justify-content-md-center">ADIP Registration</h1>
     <form action="/submit_registration" method="post">
-      <label for="name">Name:</label><br>
+
+      <label for="name">Name:</label>
       <input type="text" id="name" name="name" required><br>
-      <label for="email">Email:</label><br>
+
+      <label for="email">Email:</label>
       <input type="email" id="email" name="email" required><br>
-      <label for="password">Password:</label><br>
+      
+      <label for="password">Password:</label>
       <input type="password" id="password" name="password" required><br>
+
       <label for="disability_type">Type of Disability:</label>
         <select id="disability_type" name="disability_type" required>
           <option value="">Select an option</option>
@@ -79,8 +85,24 @@
           <option value="orthopedic_disability">Orthopedic Disability</option>
           <option value="intellectual_disability">Intellectual Disability</option>
         </select><br>
-      <label for="gov_id_number">Government ID Number:</label><br>
+
+        <label for="photoUpload">Upload  Photo:</label>
+    <input type="file" id="photoUpload" name="photo" accept="image/*"><br>
+     <button onclick="uploadPhoto()" id="btn">Upload</button><br>
+     
+     <label for="Signature">Upload  Signature:</label>
+    <input type="file" id="signUpload" name="photo" accept="image/*"><br>
+    <button onclick="uploadPhoto()" id="btn">Upload</button><br>
+    
+    <label for="GOVT Proof">Upload  GOVT Proof :</label>
+    <input type="file" id="signUpload" name="photo" accept="image/*"><br>
+    <button onclick="uploadPhoto()" id="btn">Upload </button>
+
+
+      <label for="gov_id_number">Government ID Number:</label>
       <input type="text" id="gov_id_number" name="gov_id_number"><br>
+
+
       <input type="submit" value="Submit">
     </form>
             
