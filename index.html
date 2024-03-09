@@ -1,22 +1,116 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>ADIP Registration</title>
-  </head>
-  <body>
-    <h1>Welcome to ADIP Registration</h1>
-    <form action="/submit_registration" method="post">
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br>
-      <label for="password">Password:</label><br>
-      <input type="password" id="password" name="password" required><br>
-      <label for="disability_type">Disability Type:</label><br>
-      <input type="text" id="disability_type" name="disability_type"><br>
-      <label for="gov_id_number">Government ID Number:</label><br>
-      <input type="text" id="gov_id_number" name="gov_id_number"><br>
-      <input type="submit" value="Submit">
-    </form>
-  </body>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet " href="style.css">
+    <title>SaRAI</title>
+    <style>
+        .body {
+            background-color: rgb(255, 54, 188);
+
+        }
+
+        .container {
+           
+          display: block;
+    
+
+        }
+
+        .btn_join {
+
+            display: block;
+            margin: auto;
+           
+            margin-top: 0.5cm;
+        }
+
+        .card-container {
+            display: flex;
+            margin: 2cm;
+
+            width: 18rem;
+        }
+    </style>
+</head>
+
+<body style="background-color: lightgray;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">SaRAI</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="aboutus.html">About us<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Get Started
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Login</a>
+                        <a class="dropdown-item" href="#">Sign up</a>
+
+                    </div>
+                </div>
+
+
+        </div>
+    </nav>
+   
+
+    <div class="container">
+         <div class="card-container">
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwVuCRLExncGGhtVe36zx0oKKh2sMO5ZiNgg&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                    of the card's content.</p>
+            </div>
+        </div>
+    </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-2">
+                <button type="submit" class="btn btn-dark">Create Meeting </button>
+            </div>
+            <div class="col-md-auto">
+                <form class="d-flex">
+                    <input class="form-control me2" type="search" placeholder="Search">
+                    <button class="btn_join btn-outline-info " type="submit">Join </button>
+                </form>
+                
+            </div>
+      
+
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+</body>
+
 </html>
